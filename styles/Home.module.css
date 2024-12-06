@@ -166,3 +166,72 @@ a.secondary {
     filter: invert();
   }
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.heading {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.form {
+  background: #1a1919;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inputForm {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.buttonForm {
+  width: 100%;
+  padding: 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttonForm:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 20px;
+  background: #0070f3;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result p {
+  margin: 0;
+}
