@@ -28,10 +28,26 @@ export default function Home() {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.form}>
-      <h1 className="heading">Currency Converter</h1>
-        <div className={styles.inputGroup}>
+    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+      <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+        <h1 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">Currency Converter</h1>
+        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+          <form action="#" method="POST" className="space-y-6">
+            <div>
+              <label htmlFor="from" className="block text-sm/6 font-medium text-gray-900">From:</label>
+              <div className="mt-2">
+                <input 
+                  id="from"
+                  type="text"
+                  value={from}
+                  onChange={(e) => setFrom(e.target.value)}
+                  required
+                  className="block w-full rounded-md white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                />
+              </div>
+            </div>
+            
+          </form>
           <label className="labelInput" htmlFor="from">From:</label>
           <input
             type="text"
